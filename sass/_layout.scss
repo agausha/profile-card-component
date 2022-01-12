@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: url(/images/bg-pattern-top.svg) top -15rem left 5rem,
+    url(/images/bg-pattern-top.svg) bottom -10rem right -3rem;
+  background-size: cover;
+}

@@ -1,0 +1,9 @@
+.card {
+  background: $color-primary-white;
+  width: 30%;
+
+  &__social {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+}
