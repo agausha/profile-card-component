@@ -2,10 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100vh;
 
   background: url(/images/bg-pattern-top.svg) top -25rem left -10rem no-repeat,
-    url(/images/bg-pattern-top.svg) bottom -30rem right -10rem no-repeat;
+    url(/images/bg-pattern-top.svg) bottom -35rem right -7rem no-repeat;
   background-size: contain;
   background-color: $color-primary-Dark-cyan;
+}
+
+///////////////////////////////////////////
+// MEDIA QUERIES
+.main {
+  @media only screen and(max-width: 1000px) {
+    background: url(/images/bg-pattern-top.svg) top -21rem left -7rem no-repeat,
+      url(/images/bg-pattern-bottom.svg) bottom -10rem right -23rem no-repeat;
+    background-size: contain, 40rem;
+    background-color: $color-primary-Dark-cyan;
+  }
 }
