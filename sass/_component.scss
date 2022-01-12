@@ -1,17 +1,83 @@
 .card {
-  background: $color-primary-white;
-  width: 30%;
+  background-color: $color-primary-white;
+  width: 35rem;
+  text-align: center;
+  border-radius: 2rem;
   position: relative;
+  overflow: hidden;
 
-  &__photo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+  &__top--bg {
+    background: url(/images/bg-pattern-card.svg) no-repeat;
+    background-size: cover;
+    height: 15rem;
   }
 
-  &__social {
+  &__description {
+    padding: 0 2rem 0.5rem;
+  }
+
+  &__image {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 0.5rem solid $color-primary-white;
+    overflow: hidden;
+    margin: -5rem auto 3rem auto;
+  }
+
+  &__photo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
     font-size: 1.8rem;
-    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__age {
+    margin-left: 0.3rem;
+  }
+
+  &__location {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__age,
+  &__location,
+  &__stats--text {
+    color: $Color-neutral-Dark-gray;
+  }
+
+  &__stats {
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    //border-top: 1px solid $Color-neutral-light-gray;
+    padding: 0 2.5rem 1rem;
+  }
+
+  &__stats--item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__stats--count {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.01rem;
+  }
+
+  &__stats--text {
+    font-size: 1.2rem;
+    margin-top: -1.2rem;
+    letter-spacing: 0.09rem;
   }
 }
