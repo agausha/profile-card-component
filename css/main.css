@@ -41,7 +41,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: url(/images/bg-pattern-top.svg) top -15rem left 5rem, url(/images/bg-pattern-top.svg) bottom -10rem right -3rem;
-  background-size: cover;
+  background: url(/images/bg-pattern-top.svg) top -25rem left -10rem no-repeat, url(/images/bg-pattern-top.svg) bottom -30rem right -10rem no-repeat;
+  background-size: contain;
+  background-color: #19a2ae;
 }
 /*# sourceMappingURL=main.css.map */
