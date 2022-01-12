@@ -1,6 +1,14 @@
 .card {
   background: $color-primary-white;
   width: 30%;
+  position: relative;
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 
   &__social {
     font-size: 1.8rem;
