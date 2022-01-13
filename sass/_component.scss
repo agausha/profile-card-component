@@ -35,7 +35,7 @@
   &__name {
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin: -1.5rem 0 -1rem 0;
   }
 
   &__age {
@@ -55,10 +55,10 @@
 
   &__stats {
     display: flex;
-    height: 7rem;
+    height: 6.5rem;
     align-items: center;
-    //border-top: 1px solid $Color-neutral-light-gray;
-    padding: 0 2.5rem 1rem;
+    border-top: 1px solid $Color-neutral-light-gray;
+    padding: 0 2.5rem 1.5rem;
   }
 
   &__stats--item {
@@ -79,5 +79,17 @@
     font-size: 1.2rem;
     margin-top: -1.2rem;
     letter-spacing: 0.09rem;
+  }
+}
+
+///////////////////////////////////////////
+// MEDIA QUERIES
+.card {
+  @media only screen and (max-width: 1000px) {
+    width: calc(95vw - 4rem);
+  }
+
+  &__description {
+    padding: 0 2rem 0;
   }
 }

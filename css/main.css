@@ -17,7 +17,7 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .card {
@@ -59,7 +59,7 @@ body {
 .card__name {
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin: -1.5rem 0 -1rem 0;
 }
 
 .card__age {
@@ -79,11 +79,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 7rem;
+  height: 6.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2.5rem 1rem;
+  border-top: 1px solid #dad8d8;
+  padding: 0 2.5rem 1.5rem;
 }
 
 .card__stats--item {
@@ -117,6 +118,16 @@ body {
   letter-spacing: 0.09rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: calc(95vw - 4rem);
+  }
+}
+
+.card__description {
+  padding: 0 2rem 0;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,8 +140,8 @@ body {
           align-items: center;
   width: 100%;
   height: 100vh;
-  background: url(/images/bg-pattern-top.svg) top -25rem left -10rem no-repeat, url(/images/bg-pattern-top.svg) bottom -35rem right -7rem no-repeat;
-  background-size: contain;
+  background: url(/images/bg-pattern-top.svg) top -25rem left -8rem no-repeat, url(/images/bg-pattern-bottom.svg) bottom -30rem right -8rem no-repeat;
+  background-size: contain, contain;
   background-color: #19a2ae;
 }
 

@@ -8,6 +8,7 @@ $color-primary-white: hsl(0, 0%, 100%);
 /////////////////////////////////////////
 // NEUTRAL COLORS
 $Color-neutral-Dark-gray: hsl(0, 0%, 59%);
+$Color-neutral-light-gray: hsl(0, 3%, 85%);
 
 *,
 **::before,
@@ -26,5 +27,5 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.3;
 }
